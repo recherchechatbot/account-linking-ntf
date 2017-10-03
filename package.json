@@ -2,7 +2,7 @@
   "name": "account-linking-ntf",
   "version": "0.0.0",
   "engines": {
-    "node": ">7.10.1",
+    "node": "~6.10.x",
     "npm": "4.0.x"
   },
   "private": true,
@@ -30,8 +30,5 @@
     "request": "^2.79.0",
     "serve-favicon": "^2.3.2",
     "uuid": "^3.0.1"
-  },
-  "engines": {
-    "node": "~6.10.x"
   }
 }
