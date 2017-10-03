@@ -50,6 +50,8 @@ router.post('/', (req, res) => {
     */
     res.sendStatus(200);
 
+    console.log("ON EST DEDANS");
+
     const data = req.body;
 
     // Make sure this is a page subscription
