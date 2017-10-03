@@ -20,7 +20,7 @@ const router = express.Router();
  * The Webhook token must be set in your app's configuration page
  * as well as in your servers environment.
  */
-router.get('/', (req, res) => {
+router.get('/webhook/', (req, res) => {
     if (req.query['hub.verify_token'] === process.env.WEBHOOK_TOKEN) {
         res.send(req.query['hub.challenge']);
     } else {
@@ -37,7 +37,7 @@ router.get('/', (req, res) => {
  * 1. Regular messages
  * 2. Account Link
  */
-router.post('/', (req, res) => {
+router.post('/webhook/', (req, res) => {
     /*
       You must send back a status of 200(success) within 20 seconds
       to let us know you've successfully received the callback.
