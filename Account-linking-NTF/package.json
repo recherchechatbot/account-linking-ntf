@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "./node_modules/.bin/babel-node app.js"
+    "start": "./Account-linking-NTF/node_modules/.bin/babel-node Account-linking-NTF/app.js"
   },
   "description": "Account-linking-NTF",
   "author": {
